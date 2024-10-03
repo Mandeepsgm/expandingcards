@@ -19,7 +19,7 @@ body{
 }
 
 .panel {
-    background-size: auto 100%;
+    background-size: auto 110%;
     background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
@@ -30,7 +30,7 @@ body{
     margin: 10px;
     position: relative;
     transition: flex 0.7s ease-in;
-    box-shadow: 5px 5px 10px grey;
+    box-shadow: 5px 5px 10px #ccc;
 }
 
 .panel h3 {
@@ -48,8 +48,8 @@ body{
 
 .panel.active h3 {
     opacity: 1;
-    backdrop-filter: blur(1px);
-    box-shadow: dimgray 3px 2px 15px;
+    backdrop-filter: blur(0.5px);
+        transition: opacity 0.3s ease-in 0.4s;
 }
 
 @media(max-width: 480px) {
